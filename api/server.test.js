@@ -60,9 +60,9 @@ describe('server', () => {
       expect(res.body.message).toMatch(/username and password required/i);
     });
     it("sends the correct message if the user is authenticated", async () => {
-      await request(Server).post('/api/auth/register').insert(newUser);
+      await request(Server).post('/api/auth/register').send(newUser);
       const res = await request(Server).post("/api/auth/login").send(newUser);
-      expect(res.body.message).toBe(/welcome, 1user/i);
+      expect(res.body.message).toMatch(/welcome, 1user/i);
     });
 
   });
