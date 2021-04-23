@@ -43,11 +43,11 @@ Your finished project must include all of the following requirements (further in
 **Notes:**
 
 - Execute all tests locally (Codegrade's and your own) by running `npm test`.
-- Do not exceed 2^8 rounds of hashing with `bcryptjs`.
-- If you use environment variables make sure to provide fallbacks in the code (e.g. `process.env.SECRET || "shh"`).
-- You are welcome to create additional files but **do not move or rename existing files** or folders.
-- Do not alter your `package.json` file except to install extra libraries. The "test" script has been added for you.
-- The database already has the `users` table, but if you run into issues, the migration is available.
+  X Do not exceed 2^8 rounds of hashing with `bcryptjs`.
+  X If you use environment variables make sure to provide fallbacks in the code (e.g. `process.env.SECRET || "shh"`).
+  X You are welcome to create additional files but **do not move or rename existing files** or folders.
+  X Do not alter your `package.json` file except to install extra libraries. The "test" script has been added for you.
+  X The database already has the `users` table, but if you run into issues, the migration is available.
 - In your solution, it is essential that you follow best practices and produce clean and professional results.
 - Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work.
 - It is better to submit a challenge that meets MVP than one that attempts too much and does not.
