@@ -57,7 +57,7 @@ describe('server', () => {
     it("sends correct error message if a user does not enter a password", async () => {
 
       const res = await request(Server).post('/api/auth/login').send({ id: 1, username: "1user" });
-      expect(res.body.message).toMatch(/username and password required/i);
+      expect(res.body.message).toMatch(/invalid credentials/i);
     });
     it("sends the correct message if the user is authenticated", async () => {
       await request(Server).post('/api/auth/register').send(newUser);
